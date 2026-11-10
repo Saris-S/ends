@@ -1,0 +1,19 @@
+{
+    "name": "ALTUSHKA.EasyNodeDialogSystem.Editor.DialogEditorWindow",
+    "rootNamespace": "ALTUSHKA.EasyNodeDialogSystem.Editor",
+    "references": [
+        "GUID:c0e8e1b3fa574c843b22aad9e8e941e8",
+        "GUID:48caba6d20ee9b048b64f2031e5f35d8"
+    ],
+    "includePlatforms": [
+        "Editor"
+    ],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

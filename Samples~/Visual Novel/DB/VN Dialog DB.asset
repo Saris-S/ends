@@ -1,0 +1,1241 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e8c37405fa4e2e8448a670e92ef87e85, type: 3}
+  m_Name: VN Dialog DB
+  m_EditorClassIdentifier: 
+  _currentLanguage: en
+  _categories:
+  - Unnamed
+  - demo_vn_kitchen_start
+  - demo_vn_kitchen_end
+  - mcp_pass
+  _dialogs:
+  - _nodeIdentityKey: a7914ba665194e309adfd1b8211d98aa
+    _nextNodeNumbers: 020000000a0000000200000001000000020000000400000001000000020000000b000000
+    dialogName: Kitchen Banter
+    initiator: demo_vn_kitchen_start
+    conditions: []
+    isAndLogic: 1
+    isLocked: 0
+    nodes:
+    - NodeType: 0
+      nodeId: STN.1
+      Position: {x: -592.1445, y: 280.17422}
+      StartData:
+        NextNodeId: LNN.1
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.1
+      Position: {x: -383.2602, y: 408.8218}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Chef
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.1
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Chef
+          EmotionName: Talk
+          Action: 0
+          PosX: -824
+          PosY: -340
+          Zoom: 0.36
+        - _blockId: ANM.2
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Guard
+          EmotionName: Neutral
+          Action: 0
+          PosX: 769
+          PosY: -340
+          Zoom: 0.36
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Chef
+          Text: Oi, Crumb - sniff that? That ain't the stew. That's ambition burnin'
+            on the pan.
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Chef
+          Text: "\xA1Eh, Crumb! \xBFHueles eso? No es el guiso. Es la ambici\xF3n
+            quem\xE1ndose en la sart\xE9n."
+          VoiceClip: {fileID: 0}
+        NextNodeId: LNN.2
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.2
+      Position: {x: 178.43883, y: 1036.7727}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Guard
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.3
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Guard
+          EmotionName: Talk
+          Action: 0
+          PosX: 420
+          PosY: 0
+          Zoom: 1
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Guard
+          Text: Ambition smells like onions you forgot, Pip. And don't call me Crumb
+            on duty.
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Guard
+          Text: '[ES stub] Guard: onions / duty.'
+          VoiceClip: {fileID: 0}
+        NextNodeId: LNN.3
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.3
+      Position: {x: 665.9422, y: 1577.6523}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Chef
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.4
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Chef
+          EmotionName: Happy
+          Action: 0
+          PosX: -420
+          PosY: 0
+          Zoom: 1
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Chef
+          Text: On duty, off duty - you're still the rat who naps by the cheese shelf.
+            Speak up, traveler!
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Chef
+          Text: '[ES stub] Chef: cheese shelf / speak.'
+          VoiceClip: {fileID: 0}
+        NextNodeId: CHN.1
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 2
+      nodeId: CHN.1
+      Position: {x: 1330.5681, y: 597.7908}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData:
+      - _blockId: OPT.1
+        NextNodeId: LNN.4
+        ChoiceCondition: []
+        IsAndLogic: 1
+        ChoiceConsequence:
+        - _blockId: CNS.1
+          _operation: 0
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          VariableType: 0
+          VariableName: heard_cheese_rumor
+          BoolValue: 1
+          IntValue: 0
+          FloatValue: 0
+          StringValue: 
+        Translations:
+        - _languageCode: en
+          _text: Ask about the missing cheese
+        - _languageCode: es
+          _text: '[ES stub] Ask cheese'
+      - _blockId: OPT.2
+        NextNodeId: LNN.6
+        ChoiceCondition: []
+        IsAndLogic: 1
+        ChoiceConsequence: []
+        Translations:
+        - _languageCode: en
+          _text: Ask about the night watch
+        - _languageCode: es
+          _text: '[ES stub] Ask watch'
+      - _blockId: OPT.3
+        NextNodeId: LNN.8
+        ChoiceCondition: []
+        IsAndLogic: 1
+        ChoiceConsequence: []
+        Translations:
+        - _languageCode: en
+          _text: Slip away quietly
+        - _languageCode: es
+          _text: '[ES stub] Leave'
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.4
+      Position: {x: 2401.412, y: 658.353}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Chef
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.5
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Chef
+          EmotionName: Talk
+          Action: 0
+          PosX: -420
+          PosY: 0
+          Zoom: 1
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Chef
+          Text: Ah-ha! The big wheel walked off at midnight. Either ghosts love cheddar...
+            or Crumb sleepwalks.
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Chef
+          Text: '[ES stub] Cheese walked off.'
+          VoiceClip: {fileID: 0}
+        NextNodeId: LNN.5
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.5
+      Position: {x: 3073.4978, y: 1144.4994}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Guard
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.6
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Guard
+          EmotionName: Talk
+          Action: 0
+          PosX: 420
+          PosY: 0
+          Zoom: 1
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Guard
+          Text: I do not sleepwalk. I... strategically rest my eyes. The cheese was
+            already gone.
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Guard
+          Text: '[ES stub] Guard denies sleepwalk.'
+          VoiceClip: {fileID: 0}
+        NextNodeId: LNN.9
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.6
+      Position: {x: 1914.9414, y: 1070}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Guard
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.7
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Guard
+          EmotionName: Neutral
+          Action: 0
+          PosX: 420
+          PosY: 0
+          Zoom: 1
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Guard
+          Text: Night watch is quiet. Too quiet. Except for Pip humming sea shanties
+            at the soup pot.
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Guard
+          Text: '[ES stub] Night watch.'
+          VoiceClip: {fileID: 0}
+        NextNodeId: LNN.7
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.7
+      Position: {x: 2474.4993, y: 1570.9996}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Chef
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.8
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Chef
+          EmotionName: Happy
+          Action: 0
+          PosX: -420
+          PosY: 0
+          Zoom: 1
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Chef
+          Text: Those shanties keep the broth from gettin' lonely! You're welcome,
+            whiskers.
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Chef
+          Text: '[ES stub] Shanties / broth.'
+          VoiceClip: {fileID: 0}
+        NextNodeId: LNN.9
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.8
+      Position: {x: 1721.9996, y: 1804.5004}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Guard
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.9
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Guard
+          EmotionName: Stern
+          Action: 0
+          PosX: 420
+          PosY: 0
+          Zoom: 1
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Guard
+          Text: Hmph. Walking away? Fine. Just don't steal any spoons on your way
+            out.
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Guard
+          Text: '[ES stub] Don''t steal spoons.'
+          VoiceClip: {fileID: 0}
+        NextNodeId: LNN.9
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.9
+      Position: {x: 2967.9995, y: 2138.0005}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Chef
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.10
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Chef
+          EmotionName: Neutral
+          Action: 0
+          PosX: -420
+          PosY: 0
+          Zoom: 1
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Chef
+          Text: Anyway - kitchen's open, traveler. Come back when you're hungry.
+            Or curious. Mostly hungry.
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Chef
+          Text: '[ES stub] Kitchen open.'
+          VoiceClip: {fileID: 0}
+        NextNodeId: RDN.1
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 4
+      nodeId: RDN.1
+      Position: {x: 3559.4988, y: 2598.4995}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: demo_vn_kitchen_end
+        TargetDialogName: Kitchen Epilogue
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+  - _nodeIdentityKey: 52912d8f664540439253ac3d93afd5aa
+    _nextNodeNumbers: 020000000500000001000000020000000100000001000000020000000100000007000000
+    dialogName: Kitchen Epilogue
+    initiator: demo_vn_kitchen_end
+    conditions: []
+    isAndLogic: 1
+    isLocked: 1
+    nodes:
+    - NodeType: 0
+      nodeId: STN.1
+      Position: {x: 93.04366, y: 453.04385}
+      StartData:
+        NextNodeId: CDN.1
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 3
+      nodeId: CDN.1
+      Position: {x: 360.00027, y: 400.00037}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions:
+        - _blockId: CND.1
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          VariableName: heard_cheese_rumor
+          VariableType: 0
+          ConditionOperator: 0
+          BoolValue: 1
+          IntValue: 0
+          FloatValue: 0
+          StringValue: 
+        IsAndLogic: 1
+        TrueNodeId: LNN.1
+        FalseNodeId: LNN.3
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.1
+      Position: {x: 1274.2849, y: 408.57196}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Guard
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.1
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Chef
+          EmotionName: Neutral
+          Action: 0
+          PosX: -420
+          PosY: 0
+          Zoom: 1
+        - _blockId: ANM.2
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Guard
+          EmotionName: Stern
+          Action: 0
+          PosX: 420
+          PosY: 0
+          Zoom: 1
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Guard
+          Text: Later... and look - a crumb right where that cheese wheel sat. You
+            noticed. I hate that you noticed.
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Guard
+          Text: '[ES stub] Crumb / you noticed.'
+          VoiceClip: {fileID: 0}
+        NextNodeId: LNN.2
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.2
+      Position: {x: 1933.1166, y: 1086.8829}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Chef
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.3
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Chef
+          EmotionName: Happy
+          Action: 0
+          PosX: -420
+          PosY: 0
+          Zoom: 1
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Chef
+          Text: See? Evidence! ...Or breakfast. Same thing, really. Night, Crumb.
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Chef
+          Text: '[ES stub] Evidence / breakfast.'
+          VoiceClip: {fileID: 0}
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.3
+      Position: {x: 1112.8569, y: 1244.2856}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Guard
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.4
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Chef
+          EmotionName: Neutral
+          Action: 0
+          PosX: -420
+          PosY: 0
+          Zoom: 1
+        - _blockId: ANM.5
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Guard
+          EmotionName: Neutral
+          Action: 0
+          PosX: 420
+          PosY: 0
+          Zoom: 1
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Guard
+          Text: Later... kitchen's quiet. Good. Nobody poked at the cheese mystery
+            tonight.
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Guard
+          Text: '[ES stub] Quiet / no cheese talk.'
+          VoiceClip: {fileID: 0}
+        NextNodeId: LNN.4
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.4
+      Position: {x: 1708.5715, y: 1988.5709}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Chef
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.6
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Chef
+          EmotionName: Talk
+          Action: 0
+          PosX: -420
+          PosY: 0
+          Zoom: 1
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Chef
+          Text: Shame. I had a whole theory ready. Next time, ask about the cheese!
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: Chef
+          Text: '[ES stub] Ask cheese next time.'
+          VoiceClip: {fileID: 0}
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+  - _nodeIdentityKey: 89b9fcfa55f14beaa2a09e94783ba89f
+    _nextNodeNumbers: 020000000400000004000000040000000200000003000000060000000300000006000000
+    dialogName: New Dialog
+    initiator: mcp_pass
+    conditions: []
+    isAndLogic: 1
+    isLocked: 0
+    nodes:
+    - NodeType: 0
+      nodeId: STN.1
+      Position: {x: 100, y: 100}
+      StartData:
+        NextNodeId: LNN.1
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.1
+      Position: {x: 190.3914, y: 170.86905}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: Chef
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.1
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Chef
+          EmotionName: Happy
+          Action: 0
+          PosX: 0
+          PosY: 0
+          Zoom: 1.25
+        DialogsText:
+        - LanguageCode: en
+          SayerName: Chef
+          Text: The lighthouse is lit. We can leave the harbor.
+          VoiceClip: {fileID: 0}
+        - LanguageCode: es
+          SayerName: '[ES] Chef'
+          Text: 
+          VoiceClip: {fileID: 0}
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 2
+      nodeId: CHN.1
+      Position: {x: 751.40674, y: 1271.1996}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 3
+      nodeId: CDN.1
+      Position: {x: 861.4628, y: 101.5422}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: CDN.2
+        FalseNodeId: RDN.1
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 4
+      nodeId: RDN.1
+      Position: {x: 1523.6089, y: 335.43478}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: mcp_pass
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.2
+      Position: {x: 76.35519, y: 730.9744}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.2
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: 
+          EmotionName: 
+          Action: 1
+          PosX: 0
+          PosY: 0
+          Zoom: 1
+        - _blockId: ANM.3
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: 
+          EmotionName: 
+          Action: 0
+          PosX: 0
+          PosY: 0
+          Zoom: 1
+        DialogsText: []
+        NextNodeId: CHN.1
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 2
+      nodeId: CHN.2
+      Position: {x: -362.2674, y: 563.48456}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 3
+      nodeId: CDN.2
+      Position: {x: 674.4628, y: 639.77765}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions:
+        - _blockId: CND.1
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          VariableName: 
+          VariableType: 0
+          ConditionOperator: 0
+          BoolValue: 0
+          IntValue: 0
+          FloatValue: 0
+          StringValue: 
+        - _blockId: CND.2
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          VariableName: 
+          VariableType: 0
+          ConditionOperator: 0
+          BoolValue: 0
+          IntValue: 0
+          FloatValue: 0
+          StringValue: 
+        IsAndLogic: 1
+        TrueNodeId: CDN.1
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 3
+      nodeId: CDN.3
+      Position: {x: 2256.6987, y: 870.60114}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 1
+      nodeId: LNN.3
+      Position: {x: 2097.4275, y: 599.6486}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions:
+        - _blockId: ANM.4
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Chef
+          EmotionName: Happy
+          Action: 0
+          PosX: 124
+          PosY: 48
+          Zoom: 1.1
+        - _blockId: ANM.5
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          CharacterName: Guard
+          EmotionName: Neutral
+          Action: 0
+          PosX: 0
+          PosY: 84
+          Zoom: 1.02
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+    - NodeType: 2
+      nodeId: CHN.3
+      Position: {x: 1485.7192, y: 682.3948}
+      StartData:
+        NextNodeId: 
+      LineData:
+        CharacterName: 
+        CharacterReferenceState: 0
+        MissingCharacterReferenceLabel: 
+        CharacterActions: []
+        DialogsText: []
+        NextNodeId: 
+        isInstant: 0
+      ChoiceData:
+      - _blockId: OPT.1
+        NextNodeId: 
+        ChoiceCondition: []
+        IsAndLogic: 1
+        ChoiceConsequence: []
+        Translations: []
+      - _blockId: OPT.2
+        NextNodeId: 
+        ChoiceCondition:
+        - _blockId: CND.3
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          VariableType: 0
+          VariableName: 
+          ConditionOperator: 0
+          BoolValue: 0
+          IntValue: 0
+          FloatValue: 0
+          StringValue: 
+        - _blockId: CND.4
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          VariableType: 0
+          VariableName: 
+          ConditionOperator: 0
+          BoolValue: 0
+          IntValue: 0
+          FloatValue: 0
+          StringValue: 
+        - _blockId: CND.5
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          VariableType: 0
+          VariableName: 
+          ConditionOperator: 0
+          BoolValue: 0
+          IntValue: 0
+          FloatValue: 0
+          StringValue: 
+        IsAndLogic: 1
+        ChoiceConsequence:
+        - _blockId: CNS.1
+          _operation: 0
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          VariableType: 0
+          VariableName: heard_cheese_rumor
+          BoolValue: 1
+          IntValue: 0
+          FloatValue: 0
+          StringValue: 
+        - _blockId: CNS.2
+          _operation: 0
+          ReferenceState: 0
+          MissingReferenceLabel: 
+          VariableType: 0
+          VariableName: 
+          BoolValue: 0
+          IntValue: 0
+          FloatValue: 0
+          StringValue: 
+        Translations: []
+      ConditionData:
+        DialogConditions: []
+        IsAndLogic: 1
+        TrueNodeId: 
+        FalseNodeId: 
+      RedirectData:
+        TargetCategory: 
+        TargetDialogName: 
+        DialogReferenceState: 0
+        MissingDialogReferenceLabel: 
+  _availableLanguages:
+  - en
+  - es
+  _characterNameColors:
+  - Name: Chef
+    _color: {r: 0.9098039, g: 0.72156864, b: 0.42745098, a: 1}
+    _legacyColorHex: __ENDS_COLOR_MIGRATED__
+    Translations:
+    - languageCode: en
+      displayName: Chef
+    - languageCode: es
+      displayName: '[ES] Chef'
+  - Name: Guard
+    _color: {r: 0.6039216, g: 0.65882355, b: 0.72156864, a: 1}
+    _legacyColorHex: __ENDS_COLOR_MIGRATED__
+    Translations:
+    - languageCode: en
+      displayName: Guard
+    - languageCode: es
+      displayName: '[ES] Guard'
+  - Name: McpDense
+    _color: {r: 0.4509804, g: 0.6392157, b: 0.47843137, a: 1}
+    _legacyColorHex: __ENDS_COLOR_MIGRATED__
+    Translations:
+    - languageCode: en
+      displayName: McpDense
+    - languageCode: es
+      displayName: McpDense
+  _variables:
+  - variableName: heard_cheese_rumor
+    variableType: 0
+    boolDefault: 0
+    intDefault: 0
+    floatDefault: 0
+    stringDefault: 
+  _characterGroups:
+  - characterName: Chef
+    sprites:
+    - spriteName: Neutral
+      sprite: {fileID: 21300000, guid: 48a8351082b3c6f4b9ad3d28ba6f4432, type: 3}
+    - spriteName: Happy
+      sprite: {fileID: 21300000, guid: 5ac5d41ad96f84c458537c7aef0d57ee, type: 3}
+    - spriteName: Talk
+      sprite: {fileID: 21300000, guid: e192f7fb44d9de54e9a4bda40052ee94, type: 3}
+  - characterName: Guard
+    sprites:
+    - spriteName: Neutral
+      sprite: {fileID: 21300000, guid: 429c5abd5486f5046bb736fa7ade5446, type: 3}
+    - spriteName: Stern
+      sprite: {fileID: 21300000, guid: 6efdde77e19c5cf4781d3e16bf518322, type: 3}
+    - spriteName: Talk
+      sprite: {fileID: 21300000, guid: 8de46fe071fe5f747b01dd9e1ef6b8fa, type: 3}
+  _voiceClipsEnabled: 0
+  _nextNodeNumber: 70
+  _nodeIdentityVersion: 2

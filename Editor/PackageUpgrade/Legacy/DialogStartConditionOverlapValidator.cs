@@ -1,0 +1,1 @@
+// ENDS. Reserved upgrade placeholder, this GUID replaces the obsolete 1.0 script during package import.
